@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="index.css">
+    <title>Calculadora de empréstimo</title>
+</head>
+<body>
+
+    <table>
+        <tr><th>Entrar data do empréstimo:</th>
+            <td></td>
+            <th>Loan Balance, Cumulative Equity, and Interest Payments</th></tr>
+        <tr><td>Amount of the loan ($):</td>
+            <td><input id="amount" onchange="calculate();"></td>
+            <td rowspan=8>
+            <cavas id="graph" width="400" height="250"></cavas></td></tr>
+        <tr><td>Annual interest (%):</td>
+            <td><input type="text" id="apr" onchange="calculate();"></td></tr>
+    </table>
+    
+</body>
+<script src="index.js"></script>
+</html>
